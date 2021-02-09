@@ -1,0 +1,829 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.main-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: #FFFFFF;
+  font-family: 'Lato'; }
+  .main-container .main-container__left-panel {
+    width: 266px;
+    height: 100vh;
+    background: #F5F6FF;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .main-container .main-container__left-panel .left-panel__logo-and-version-div {
+      display: grid;
+      margin-top: 15px;
+      margin-left: -55px; }
+      .main-container .main-container__left-panel .left-panel__logo-and-version-div .logo-and-version-div__h2 {
+        color: #110B56;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        grid-column: 2;
+        margin: 10px; }
+      .main-container .main-container__left-panel .left-panel__logo-and-version-div .logo-and-version-div__version-p {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.02em;
+        color: #B1B1C9;
+        margin-top: -15px;
+        margin-left: 10px;
+        grid-column: 2; }
+      .main-container .main-container__left-panel .left-panel__logo-and-version-div .logo-and-version-div__svg-logo-group {
+        width: 50px;
+        height: 50px;
+        background: #54C1FB;
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+        grid-column: 0;
+        border-radius: 50%;
+        margin-top: 2px; }
+        .main-container .main-container__left-panel .left-panel__logo-and-version-div .logo-and-version-div__svg-logo-group .svg-logo-group__svg-rectangle {
+          position: relative;
+          left: 19%;
+          right: 96.42%;
+          top: 25%;
+          bottom: 90.42%;
+          -webkit-transform: rotate(-90deg);
+              -ms-transform: rotate(-90deg);
+                  transform: rotate(-90deg); }
+        .main-container .main-container__left-panel .left-panel__logo-and-version-div .logo-and-version-div__svg-logo-group .svg-logo-group__svg-rect {
+          position: relative;
+          left: 8%;
+          right: 95.69%;
+          top: 35%;
+          bottom: 92.73%;
+          -webkit-transform: rotate(-90deg);
+              -ms-transform: rotate(-90deg);
+                  transform: rotate(-90deg); }
+        .main-container .main-container__left-panel .left-panel__logo-and-version-div .logo-and-version-div__svg-logo-group .svg-logo-group__svg-circle {
+          position: relative;
+          left: -12%;
+          right: 9%;
+          top: 16%;
+          bottom: 92.7%; }
+    .main-container .main-container__left-panel .left-panel__all-links {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 50px;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content; }
+      .main-container .main-container__left-panel .left-panel__all-links .all-links__link {
+        width: 236px;
+        height: 48px;
+        padding: 10px;
+        font-weight: 500px;
+        border-radius: 6px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        color: #79798B; }
+        .main-container .main-container__left-panel .left-panel__all-links .all-links__link .all-links__link__icon {
+          font-size: 1.5em;
+          margin: 0 10px 0 5px; }
+      .main-container .main-container__left-panel .left-panel__all-links .all-links__link_active {
+        color: #56549E;
+        background: -o-linear-gradient(179.75deg, rgba(71, 72, 111, 0) -10.64%, rgba(71, 72, 111, 0.2) 80.49%);
+        background: linear-gradient(270.25deg, rgba(71, 72, 111, 0) -10.64%, rgba(71, 72, 111, 0.2) 80.49%); }
+      .main-container .main-container__left-panel .left-panel__all-links #all-links__link_bottom {
+        margin-top: 400px; }
+  .main-container .main-container__information-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+    padding-top: 60px;
+    width: 100vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .main-container .main-container__information-block .information-block__top-line {
+      height: 80px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .main-container .main-container__information-block .information-block__top-line .top-line__input-container {
+        margin-left: 40px; }
+        .main-container .main-container__information-block .information-block__top-line .top-line__input-container .input-container__search-icon {
+          position: relative;
+          left: 45px;
+          color: #B1B1C9; }
+        .main-container .main-container__information-block .information-block__top-line .top-line__input-container .input-container__input {
+          width: 388px;
+          height: 48px;
+          background: #FFFFFF;
+          border: 1px solid #F2F2FD;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          border-radius: 40px;
+          margin-left: 10px;
+          outline: none;
+          padding: 10px 10px 10px 45px;
+          font-family: 'Lato'; }
+      .main-container .main-container__information-block .information-block__top-line .top-line__notifications-container {
+        margin-left: 350px;
+        cursor: pointer; }
+        .main-container .main-container__information-block .information-block__top-line .top-line__notifications-container .notifications-container__icon {
+          font-size: 1.5em; }
+        .main-container .main-container__information-block .information-block__top-line .top-line__notifications-container .notifications-container__new-actions {
+          background-color: #FA5F1C;
+          border-radius: 50%;
+          width: 10px;
+          height: 10px;
+          position: relative;
+          left: 9px;
+          top: 7px; }
+      .main-container .main-container__information-block .information-block__top-line .top-line__account-container {
+        margin-left: 680px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        cursor: pointer; }
+        .main-container .main-container__information-block .information-block__top-line .top-line__account-container .account-container__img-container {
+          width: 40px;
+          height: 40px;
+          background: #110B56;
+          border-radius: 50%; }
+        .main-container .main-container__information-block .information-block__top-line .top-line__account-container .account-container__svg {
+          margin-left: 30px; }
+    .main-container .main-container__information-block .information-block__all-information-block {
+      display: grid;
+      width: 100%; }
+      .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart {
+        width: 713px;
+        height: 360px;
+        border: 1px solid #F2F2FD;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        border-radius: 20px;
+        margin: 20px;
+        margin-left: 70px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 10px; }
+        .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__top-line {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          padding: 20px 25px; }
+          .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__top-line .chart__top-line__h2 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.02em;
+            color: #0F3F62; }
+          .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__top-line .chart-top-line__select-month .select-month__calendar-icon {
+            position: absolute;
+            font-size: 20px;
+            color: #0F3F62;
+            left: 855px;
+            top: 201px; }
+          .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__top-line .chart-top-line__select-month .select-month__select-month {
+            width: 170px;
+            height: 40px;
+            border: 0.5px solid #DBE5E5;
+            border-radius: 45px;
+            outline: none;
+            -webkit-appearance: none;
+               -moz-appearance: none;
+                    appearance: none;
+            cursor: pointer;
+            font-family: 'Lato';
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.02em;
+            color: #8695A0;
+            padding-left: 40px; }
+          .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__top-line .chart-top-line__select-month .chart-top-line__arrow-down {
+            position: absolute;
+            left: 986px;
+            top: 207px; }
+        .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__middle-block {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          margin: 20px;
+          height: 100%;
+          padding: 10px;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box; }
+          .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__middle-block .middle-block__numbers-block {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__middle-block .middle-block__numbers-block .numbers-block__number {
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 14px;
+              text-align: right;
+              letter-spacing: 0.02em;
+              color: #8695A0; }
+          .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__middle-block .middle-block__graphic-block .graphic-block__svg-line .graphic-block__svg {
+            position: absolute;
+            left: 420px;
+            top: 288px; }
+            .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__middle-block .middle-block__graphic-block .graphic-block__svg-line .graphic-block__svg:nth-child(2) {
+              top: 328px; }
+            .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__middle-block .middle-block__graphic-block .graphic-block__svg-line .graphic-block__svg:nth-child(3) {
+              top: 368px; }
+            .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__middle-block .middle-block__graphic-block .graphic-block__svg-line .graphic-block__svg:nth-child(4) {
+              top: 408px; }
+            .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__middle-block .middle-block__graphic-block .graphic-block__svg-line .graphic-block__svg:nth-child(5) {
+              top: 446px; }
+          .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__middle-block .graphic-block__all-graphic-blocks {
+            width: 483.688px;
+            position: absolute;
+            left: 450px;
+            top: 290px;
+            height: 155px;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__middle-block .graphic-block__all-graphic-blocks .all-graphics-block__one-graphic-element .one-graphic-element__graphic-element_light {
+              margin-top: 30px;
+              width: 24px;
+              height: 60px;
+              border-radius: 5px;
+              background: #54C1FB;
+              -webkit-transition: 1s linear height;
+              -o-transition: 1s linear height;
+              transition: 1s linear height; }
+            .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__middle-block .graphic-block__all-graphic-blocks .all-graphics-block__one-graphic-element .one-graphic-element__graphic-element_dark {
+              margin-top: -5px;
+              width: 24px;
+              height: 60px;
+              border-radius: 5px;
+              background: #2760F3;
+              border-top-right-radius: 0;
+              border-top-left-radius: 0;
+              -webkit-transition: 1s linear height;
+              -o-transition: 1s linear height;
+              transition: 1s linear height; }
+        .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__bottom-line {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          margin-top: auto;
+          height: -webkit-max-content;
+          height: -moz-max-content;
+          height: max-content;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          width: 70%;
+          -webkit-align-self: center;
+              -ms-flex-item-align: center;
+                  align-self: center;
+          margin-bottom: 10px; }
+          .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__bottom-line .chart__bottom-line__p {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            color: #8695A0;
+            cursor: pointer;
+            width: 19px;
+            height: 14px; }
+          .main-container .main-container__information-block .information-block__all-information-block .all-information-block__chart .chart__bottom-line .chart__bottom-line__p_active {
+            color: #0E1566;
+            font-weight: 600; }
+    .main-container .main-container__information-block .all-information-block__covid-19-banner {
+      position: absolute;
+      width: 324px;
+      height: 232px;
+      left: 1160px;
+      top: 160px;
+      background: -o-linear-gradient(330.28deg, rgba(84, 193, 251, 0.5) -16.03%, rgba(84, 193, 251, 0.5) 103.68%);
+      background: linear-gradient(119.72deg, rgba(84, 193, 251, 0.5) -16.03%, rgba(84, 193, 251, 0.5) 103.68%);
+      opacity: 0.7;
+      border-radius: 10px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: pointer;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      -webkit-transition: .5s transform;
+      -o-transition: .5s transform;
+      transition: .5s transform; }
+      .main-container .main-container__information-block .all-information-block__covid-19-banner:hover {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1); }
+      .main-container .main-container__information-block .all-information-block__covid-19-banner .covid-19-banner__h2 {
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-top: 40px; }
+      .main-container .main-container__information-block .all-information-block__covid-19-banner .covid-19-banner__p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-top: 20px; }
+      .main-container .main-container__information-block .all-information-block__covid-19-banner .covid-19-banner__button {
+        width: 240px;
+        height: 46px;
+        background: #FFFFFF;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        cursor: pointer;
+        margin-top: 25px;
+        font-family: 'Lato'; }
+    .main-container .main-container__information-block .all-information-block__hospital-information {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__recommended-hospitals {
+        width: 364px;
+        height: 313.33px;
+        background: #FFFFFF;
+        border: 1px solid #F2F2FD;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        -webkit-box-shadow: 0px 21.6667px 43.3333px rgba(48, 77, 96, 0.03);
+                box-shadow: 0px 21.6667px 43.3333px rgba(48, 77, 96, 0.03);
+        border-radius: 16.25px;
+        margin: 20px;
+        margin-left: 70px;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 20px; }
+        .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__recommended-hospitals .recommended-hospitals__top-line {
+          width: 100%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__recommended-hospitals .recommended-hospitals__top-line .recommended-hospitals__top-line__h2 {
+            font-weight: bold;
+            font-size: 17.3333px;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+            color: #0F3F62; }
+          .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__recommended-hospitals .recommended-hospitals__top-line .recommended-hospitals__top-line__two-cicles {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__recommended-hospitals .recommended-hospitals__top-line .recommended-hospitals__top-line__two-cicles .two-circles__svg {
+              margin: 0 5px; }
+        .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__recommended-hospitals .recommended-hospitals__all-hospitals {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          margin-top: 30px; }
+          .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__recommended-hospitals .recommended-hospitals__all-hospitals .all-hospitals__one-recommendation {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 322px;
+            height: 50px;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            padding: 12px; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__recommended-hospitals .recommended-hospitals__all-hospitals .all-hospitals__one-recommendation .one-recommendation__name-of-hospital {
+              margin-left: 30px; }
+              .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__recommended-hospitals .recommended-hospitals__all-hospitals .all-hospitals__one-recommendation .one-recommendation__name-of-hospital .name-of-hospital-p, .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__recommended-hospitals .recommended-hospitals__all-hospitals .all-hospitals__one-recommendation .one-recommendation__name-of-hospital .second-name-of-hospital-p {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15.1667px;
+                line-height: 18px;
+                color: #0F3F62; }
+              .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__recommended-hospitals .recommended-hospitals__all-hospitals .all-hospitals__one-recommendation .one-recommendation__name-of-hospital .second-name-of-hospital-p {
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 16px;
+                color: #8695A0; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__recommended-hospitals .recommended-hospitals__all-hospitals .all-hospitals__one-recommendation .one-recommendation__icon {
+              margin-left: auto; }
+          .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__recommended-hospitals .recommended-hospitals__all-hospitals .all-hospitals__hr {
+            border: none;
+            background-color: #DBE6E6;
+            height: 0.541667px; }
+      .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider {
+        max-width: 375px; }
+        .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital {
+          width: 328px;
+          height: 313.33px;
+          border: 1px solid #F2F2FD;
+          border-radius: 17.2632px;
+          cursor: pointer;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          padding: 35px;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          margin-top: 20px; }
+          .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospitals__two-cirles {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 20px;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            margin-left: auto; }
+          .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__info-about-hosputal {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__info-about-hosputal .info-about-hosputal__logo {
+              width: 103.58px;
+              height: 103.58px;
+              background: #110B56;
+              border-radius: 50%;
+              margin: 5px 0; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__info-about-hosputal .info-about-hospital__h2 {
+              font-weight: 900;
+              font-size: 18px;
+              line-height: 22px;
+              text-align: center;
+              letter-spacing: 0.02em;
+              color: #110B56;
+              margin: 5px 0; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__info-about-hosputal .info-about-hospital__p {
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 14px;
+              text-align: center;
+              letter-spacing: 0.02em;
+              color: #676E89; }
+          .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            margin-top: 50px; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__quanity-rooms, .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__reputation, .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__best-doctor {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -webkit-flex-direction: column;
+                  -ms-flex-direction: column;
+                      flex-direction: column;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              border-right: 1.29474px dashed #DBDDE6;
+              width: 100px; }
+              .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__quanity-rooms .quanity-rooms__quanity-p, .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__reputation .quanity-rooms__quanity-p, .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__best-doctor .quanity-rooms__quanity-p, .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__reputation .reputation__reputation-p, .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__best-doctor .best-doctor__best-doctor-p {
+                font-weight: 900;
+                font-size: 20.7158px;
+                line-height: 25px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #110B56; }
+              .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__quanity-rooms .quanity-rooms__p, .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__reputation .quanity-rooms__p, .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__best-doctor .quanity-rooms__p, .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__reputation .reputation__p, .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__best-doctor .best-doctor__p {
+                font-weight: normal;
+                font-size: 12.0842px;
+                line-height: 15px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #676E89; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__the-best-hospitals-slider .hospital-information__the-best-hospital .the-best-hospital__short-description-of-hospital .short-description-of-hospital__best-doctor:nth-child(3) {
+              border: none; }
+      .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__view-al-scheduled {
+        position: absolute;
+        left: 1145px;
+        top: 430px;
+        width: 324px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__view-al-scheduled .view-all-schedulded__h2 {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 18px;
+          letter-spacing: 0.02em;
+          color: #110B56; }
+        .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__view-al-scheduled .view-all-scheduled__link {
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: 0.02em;
+          color: #F68E5A;
+          text-decoration: none; }
+      .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 20px;
+        width: 324px;
+        height: 357px;
+        background: #FCFCFC;
+        -webkit-box-shadow: 22px 22px 84px rgba(237, 238, 247, 0.7);
+                box-shadow: 22px 22px 84px rgba(237, 238, 247, 0.7);
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-top: -67px;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        cursor: pointer; }
+        .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-events__all-events {
+          overflow: auto;
+          max-height: 300px;
+          width: 100%;
+          padding-right: 10px; }
+          .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-events__all-events::-webkit-scrollbar {
+            background-color: #f5f4f4;
+            border-radius: 5px; }
+          .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-events__all-events::-webkit-scrollbar-button {
+            display: none; }
+          .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-events__all-events::-webkit-scrollbar-thumb {
+            background-color: #dadada;
+            border-radius: 5px; }
+          .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-events__all-events .all-events__one-event {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            padding: 15px; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-events__all-events .all-events__one-event .one-event__three-circles-container {
+              position: relative;
+              width: -webkit-max-content;
+              width: -moz-max-content;
+              width: max-content;
+              width: 36px;
+              height: 36px;
+              background: #c4c4c43f;
+              left: 250px;
+              border-radius: 50%;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between;
+              padding: 5px;
+              -webkit-box-sizing: border-box;
+                      box-sizing: border-box; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-events__all-events .all-events__one-event .one-event__name-of-event {
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 16px;
+              letter-spacing: 0.02em;
+              color: #110B56;
+              margin-top: -35px; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-events__all-events .all-events__one-event .one-event__date-of-event {
+              font-size: 12px;
+              line-height: 16px;
+              letter-spacing: 0.02em;
+              color: #9090A4;
+              margin-top: 7px; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-events__all-events .all-events__one-event .one-event__category-of-event {
+              background: none;
+              color: black; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-events__all-events .all-events__one-event .one-event__category-of-event_healthy, .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-events__all-events .all-events__one-event .one-event__category-of-event, .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-events__all-events .all-events__one-event .one-event__category-of-event_charity {
+              font-size: 12px;
+              line-height: 14px;
+              letter-spacing: 0.02em;
+              color: #F49F74;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              text-align: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              background: #f49f7436;
+              border-radius: 50px;
+              width: 99px;
+              height: 30px;
+              margin-top: 15px; }
+            .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-events__all-events .all-events__one-event .one-event__category-of-event_charity {
+              background: #67dfdf36;
+              color: #67DFDF; }
+        .main-container .main-container__information-block .all-information-block__hospital-information .hospital-information__scheduled-events .scheduled-evens__button {
+          position: fixed;
+          top: 810px;
+          font-size: 14px;
+          line-height: 14px;
+          text-align: center;
+          letter-spacing: 0.02em;
+          color: #FFFFFF;
+          width: 276px;
+          height: 49px;
+          background: -o-linear-gradient(330.28deg, rgba(84, 193, 251, 0.5) -16.03%, rgba(84, 193, 251, 0.5) 103.68%);
+          background: linear-gradient(119.72deg, rgba(84, 193, 251, 0.5) -16.03%, rgba(84, 193, 251, 0.5) 103.68%);
+          border-radius: 6px;
+          outline: none;
+          cursor: pointer;
+          border: none; }

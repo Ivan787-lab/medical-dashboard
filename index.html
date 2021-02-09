@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="libs/slick-slider/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcur icon" href="https://cdn.iconscout.com/icon/free/png-256/medical-127-129383.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your medical dashboard</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-container__left-panel">
+            <div class="left-panel__logo-and-version-div">
+                <div class="logo-and-version-div__svg-logo-group">
+                    <svg class="svg-logo-group__svg-rectangle" width="18" height="8" viewBox="0 0 18 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.787 5.97642L17.787 2.46163C17.787 1.39654 16.9349 0.437957 15.7633 0.437957L2.02367 0.437958C0.95858 0.437958 3.72452e-08 1.29003 8.84574e-08 2.46163L2.42094e-07 5.97642C2.8865e-07 7.04151 0.852071 8.00009 2.02367 8.00009L15.7633 8.00009C16.8284 8.00009 17.787 7.04151 17.787 5.97642Z"
+                            fill="white" />
+                    </svg>
+                    <svg class="svg-logo-group__svg-rect" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.78692 5.645L7.78692 2.13021C7.78692 1.06512 6.93485 3.02289e-05 5.86976 3.02755e-05L2.35497 3.04291e-05C1.18337 3.04803e-05 0.331299 0.95861 0.331299 2.13021L0.331299 5.645C0.331299 6.71009 1.18337 7.66867 2.35497 7.66867L5.86976 7.66867C6.82834 7.66867 7.78692 6.71009 7.78692 5.645Z"
+                            fill="white" />
+                    </svg>
+                    <svg class="svg-logo-group__svg-circle" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.56213 3.94083C7.56213 1.91716 5.85799 0.106506 3.72781 0.106506C1.59763 0.106506 7.91461e-08 1.91716 1.67603e-07 3.94083C2.56061e-07 5.96449 1.70414 7.66864 3.72781 7.66864C5.85799 7.66864 7.56213 5.96449 7.56213 3.94083Z"
+                            fill="white" />
+                    </svg>
+
+                </div>
+                <h2 class="logo-and-version-div__h2">Medkit_</h2>
+                <p class="logo-and-version-div__version-p">Dashboard v2.6.0</p>
+            </div>
+            <div class="left-panel__all-links">
+                <a href="#" class="all-links__link all-links__link_active"><i
+                        class="all-links__link__icon fas fa-house-user"></i>Home</a>
+                <a href="#" class="all-links__link"><i class="all-links__link__icon far fa-user"></i> Patient</a>
+                <a href="#" class="all-links__link"><i class="all-links__link__icon fas fa-hotel"></i> Places</a>
+                <a href="#" class="all-links__link"><i class="all-links__link__icon fas fa-notes-medical"></i> Data &
+                    Notes</a>
+                <a href="#" class="all-links__link"><i class="all-links__link__icon fas fa-chart-line"></i>
+                    Analytics</a>
+                <a href="#" class="all-links__link"><i class=" all-links__link__icon fas fa-cog"></i>Settings</a>
+                <a href="#" id="all-links__link_bottom" class="all-links__link"><i
+                        class="all-links__link__icon fas fa-sign-out-alt"></i>Log Out</a>
+            </div>
+        </div>
+        <div class="main-container__information-block">
+            <div class="information-block__top-line">
+                <div class="top-line__input-container">
+                    <i class="input-container__search-icon fas fa-search"></i>
+                    <input type="text" placeholder="Search Anything" class="input-container__input">
+                </div>
+                <div class="top-line__notifications-container">
+                    <div class="notifications-container__new-actions"></div>
+                    <i class="notifications-container__icon far fa-bell"></i>
+                </div>
+                <div class="top-line__account-container">
+                    <div class="account-container__img-container"></div>
+                    <svg class="account-container__svg" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.9999 1L6.99994 7L0.999939 1" stroke="#F68E5A" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </div>
+            </div>
+            <div class="information-block__all-information-block">
+                <div class="all-information-block__chart">
+                    <div class="chart__top-line">
+                        <h2 class="chart__top-line__h2">Health Report Patient</h2>
+
+                        <div class="chart-top-line__select-month">
+                            <i class="select-month__calendar-icon far fa-calendar"></i>
+                            <select class="select-month__select-month">
+                                <option value="none-select">Monthly</option>
+                                <option value="Jan">January</option>
+                                <option value="Feb">February</option>
+                                <option value="Mar">March</option>
+                                <option value="Apr">April</option>
+                                <option value="May">May</option>
+                                <option value="Jun">June</option>
+                                <option value="Jul">July</option>
+                                <option value="Aug">August</option>
+                                <option value="Sep">September</option>
+                                <option value="Oct">October</option>
+                                <option value="Nov">November</option>
+                                <option value="Des">December</option>
+                            </select>
+                            <svg class="chart-top-line__arrow-down" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7 7L13 1" stroke="#0F3F62" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="chart__middle-block">
+                        <div class="middle-block__numbers-block">
+                            <p class="numbers-block__number">+100</p>
+                            <p class="numbers-block__number">75</p>
+                            <p class="numbers-block__number">50</p>
+                            <p class="numbers-block__number">25</p>
+                            <p class="numbers-block__number">0</p>
+                        </div>
+                        <div class="middle-block__graphic-block">
+                            <div class="graphic-block__svg-line">
+                                <svg class="graphic-block__svg" width="602" height="2" viewBox="0 0 602 2" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1L602 0.999947" stroke="#DBE6E6" stroke-width="0.5" />
+                                </svg>
+                                <svg class="graphic-block__svg" width="602" height="2" viewBox="0 0 602 2" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1L602 0.999947" stroke="#DBE6E6" stroke-width="0.5" />
+                                </svg>
+                                <svg class="graphic-block__svg" width="602" height="2" viewBox="0 0 602 2" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1L602 0.999947" stroke="#DBE6E6" stroke-width="0.5" />
+                                </svg>
+                                <svg class="graphic-block__svg" width="602" height="2" viewBox="0 0 602 2" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1L602 0.999947" stroke="#DBE6E6" stroke-width="0.5" />
+                                </svg>
+                                <svg class="graphic-block__svg" width="602" height="2" viewBox="0 0 602 2" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1L602 0.999947" stroke="#DBE6E6" stroke-width="0.5" />
+                                </svg>
+                            </div>
+                            <div class="graphic-block__all-graphic-blocks">
+                                <div class="all-graphics-block__one-graphic-element">
+                                    <div class="one-graphic-element__graphic-element_light"></div>
+                                    <div class="one-graphic-element__graphic-element_dark"></div>
+                                </div>
+                                <div class="all-graphics-block__one-graphic-element">
+                                    <div class="one-graphic-element__graphic-element_light"></div>
+                                    <div class="one-graphic-element__graphic-element_dark"></div>
+                                </div>
+                                <div class="all-graphics-block__one-graphic-element">
+                                    <div class="one-graphic-element__graphic-element_light"></div>
+                                    <div class="one-graphic-element__graphic-element_dark"></div>
+                                </div>
+                                <div class="all-graphics-block__one-graphic-element">
+                                    <div class="one-graphic-element__graphic-element_light"></div>
+                                    <div class="one-graphic-element__graphic-element_dark"></div>
+                                </div>
+                                <div class="all-graphics-block__one-graphic-element">
+                                    <div class="one-graphic-element__graphic-element_light"></div>
+                                    <div class="one-graphic-element__graphic-element_dark"></div>
+                                </div>
+                                <div class="all-graphics-block__one-graphic-element">
+                                    <div class="one-graphic-element__graphic-element_light"></div>
+                                    <div class="one-graphic-element__graphic-element_dark"></div>
+                                </div>
+                                <div class="all-graphics-block__one-graphic-element">
+                                    <div class="one-graphic-element__graphic-element_light"></div>
+                                    <div class="one-graphic-element__graphic-element_dark"></div>
+                                </div>
+                                <div class="all-graphics-block__one-graphic-element">
+                                    <div class="one-graphic-element__graphic-element_light"></div>
+                                    <div class="one-graphic-element__graphic-element_dark"></div>
+                                </div>
+                                <div class="all-graphics-block__one-graphic-element">
+                                    <div class="one-graphic-element__graphic-element_light"></div>
+                                    <div class="one-graphic-element__graphic-element_dark"></div>
+                                </div>
+                                <div class="all-graphics-block__one-graphic-element">
+                                    <div class="one-graphic-element__graphic-element_light"></div>
+                                    <div class="one-graphic-element__graphic-element_dark"></div>
+                                </div>
+                                <div class="all-graphics-block__one-graphic-element">
+                                    <div class="one-graphic-element__graphic-element_light"></div>
+                                    <div class="one-graphic-element__graphic-element_dark"></div>
+                                </div>
+                                <div class="all-graphics-block__one-graphic-element">
+                                    <div class="one-graphic-element__graphic-element_light"></div>
+                                    <div class="one-graphic-element__graphic-element_dark"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart__bottom-line">
+                        <p class="chart__bottom-line__p">Jan</p>
+                        <p class="chart__bottom-line__p">Feb</p>
+                        <p class="chart__bottom-line__p chart__bottom-line__p_active">Mar</p>
+                        <p class="chart__bottom-line__p">Apr</p>
+                        <p class="chart__bottom-line__p">May</p>
+                        <p class="chart__bottom-line__p">Jun</p>
+                        <p class="chart__bottom-line__p ">Jul</p>
+                        <p class="chart__bottom-line__p">Aug</p>
+                        <p class="chart__bottom-line__p">Sep</p>
+                        <p class="chart__bottom-line__p">Oct</p>
+                        <p class="chart__bottom-line__p">Nov</p>
+                        <p class="chart__bottom-line__p ">Des</p>
+                    </div>
+                </div>
+            </div>
+            <div class="all-information-block__covid-19-banner">
+                <h2 class="covid-19-banner__h2">Covid-19 World</h2>
+                <p class="covid-19-banner__p">The coronavirus COVID-19 is affecting 219 countries</p>
+                <button class="covid-19-banner__button">Check your information</button>
+            </div>
+
+            <div class="all-information-block__hospital-information">
+
+                <div class="hospital-information__recommended-hospitals">
+                    <div class="recommended-hospitals__top-line">
+                        <h2 class="recommended-hospitals__top-line__h2">Recommended Hospital</h2>
+                        <div class="recommended-hospitals__top-line__two-cicles">
+                            <svg class="two-circles__svg" width="6" height="7" viewBox="0 0 6 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2.87499" cy="3.45833" r="2.70833" fill="#0F3F62" />
+                            </svg>
+                            <svg class="two-circles__svg" width="6" height="7" viewBox="0 0 6 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2.87499" cy="3.45833" r="2.70833" fill="#0F3F62" />
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div class="recommended-hospitals__all-hospitals">
+                        <div class="all-hospitals__one-recommendation">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.25904 12.0306L10.3308 17.5934C10.4486 17.8288 10.6333 18.0242 10.8617 18.1554C11.0901 18.2865 11.3521 18.3474 11.615 18.3306C11.8779 18.3138 12.13 18.2199 12.3397 18.0607C12.5495 17.9015 12.7077 17.6841 12.7945 17.4356L18.2589 2.50677C18.3339 2.30625 18.3497 2.08838 18.3042 1.87917C18.2588 1.66995 18.1541 1.47822 18.0026 1.32683C17.8511 1.17545 17.6592 1.07081 17.4498 1.0254C17.2404 0.979982 17.0224 0.995709 16.8217 1.0707L1.88151 6.53091C1.63983 6.61886 1.42858 6.77446 1.27298 6.97912C1.11739 7.18378 1.02403 7.42886 1.00405 7.6851C0.984069 7.94134 1.03831 8.19792 1.1603 8.42419C1.28228 8.65047 1.46686 8.83688 1.692 8.96118L7.25904 12.0306ZM7.25904 12.0306L10.6862 8.60602"
+                                    stroke="#0F3F62" stroke-width="1.625" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="one-recommendation__name-of-hospital">
+                                <p class="name-of-hospital-p">Rs. Hasan Sadikin</p>
+                                <p class="second-name-of-hospital-p">Jl. Pasteur ,Bandung</p>
+                            </div>
+                            <i class="one-recommendation__icon fas fa-arrow-right"></i>
+                        </div>
+                        <hr class="all-hospitals__hr">
+                        <div class="all-hospitals__one-recommendation">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.25904 12.0306L10.3308 17.5934C10.4486 17.8288 10.6333 18.0242 10.8617 18.1554C11.0901 18.2865 11.3521 18.3474 11.615 18.3306C11.8779 18.3138 12.13 18.2199 12.3397 18.0607C12.5495 17.9015 12.7077 17.6841 12.7945 17.4356L18.2589 2.50677C18.3339 2.30625 18.3497 2.08838 18.3042 1.87917C18.2588 1.66995 18.1541 1.47822 18.0026 1.32683C17.8511 1.17545 17.6592 1.07081 17.4498 1.0254C17.2404 0.979982 17.0224 0.995709 16.8217 1.0707L1.88151 6.53091C1.63983 6.61886 1.42858 6.77446 1.27298 6.97912C1.11739 7.18378 1.02403 7.42886 1.00405 7.6851C0.984069 7.94134 1.03831 8.19792 1.1603 8.42419C1.28228 8.65047 1.46686 8.83688 1.692 8.96118L7.25904 12.0306ZM7.25904 12.0306L10.6862 8.60602"
+                                    stroke="#0F3F62" stroke-width="1.625" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="one-recommendation__name-of-hospital">
+                                <p class="name-of-hospital-p">Rs. Hasan Sadikin</p>
+                                <p class="second-name-of-hospital-p">Jl. Pasteur ,Bandung</p>
+                            </div>
+                            <i class="one-recommendation__icon fas fa-arrow-right"></i>
+                        </div>
+                        <hr class="all-hospitals__hr">
+                        <div class="all-hospitals__one-recommendation">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.25904 12.0306L10.3308 17.5934C10.4486 17.8288 10.6333 18.0242 10.8617 18.1554C11.0901 18.2865 11.3521 18.3474 11.615 18.3306C11.8779 18.3138 12.13 18.2199 12.3397 18.0607C12.5495 17.9015 12.7077 17.6841 12.7945 17.4356L18.2589 2.50677C18.3339 2.30625 18.3497 2.08838 18.3042 1.87917C18.2588 1.66995 18.1541 1.47822 18.0026 1.32683C17.8511 1.17545 17.6592 1.07081 17.4498 1.0254C17.2404 0.979982 17.0224 0.995709 16.8217 1.0707L1.88151 6.53091C1.63983 6.61886 1.42858 6.77446 1.27298 6.97912C1.11739 7.18378 1.02403 7.42886 1.00405 7.6851C0.984069 7.94134 1.03831 8.19792 1.1603 8.42419C1.28228 8.65047 1.46686 8.83688 1.692 8.96118L7.25904 12.0306ZM7.25904 12.0306L10.6862 8.60602"
+                                    stroke="#0F3F62" stroke-width="1.625" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="one-recommendation__name-of-hospital">
+                                <p class="name-of-hospital-p">Rs. Hasan Sadikin</p>
+                                <p class="second-name-of-hospital-p">Jl. Pasteur ,Bandung</p>
+                            </div>
+                            <i class="one-recommendation__icon fas fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="hospital-information__the-best-hospitals-slider">
+                    <div class="hospital-information__the-best-hospital">
+                        <div class="the-best-hospitals__two-cirles">
+                            <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2.36844" cy="2.68421" r="2.15789" fill="black" />
+                            </svg>
+                            <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2.36844" cy="2.68421" r="2.15789" fill="black" />
+                            </svg>
+                        </div>
+                        <div class="the-best-hospital__info-about-hosputal">
+                            <div class="info-about-hosputal__logo"></div>
+                            <h2 class="info-about-hospital__h2">Rs. Bertha Medika</h2>
+                            <p class="info-about-hospital__p">Jl. Cisaat, Sukabumi </p>
+                        </div>
+                        <div class="the-best-hospital__short-description-of-hospital">
+                            <div class="short-description-of-hospital__quanity-rooms">
+                                <p class="quanity-rooms__quanity-p">120</p>
+                                <p class="quanity-rooms__p">Rooms</p>
+                            </div>
+                            <div class="short-description-of-hospital__reputation">
+                                <p class="reputation__reputation-p">#1</p>
+                                <p class="reputation__p">Reputation</p>
+                            </div>
+                            <div class="short-description-of-hospital__best-doctor">
+                                <p class="best-doctor__best-doctor-p">33+</p>
+                                <p class="best-doctor__p">Best Doctor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hospital-information__the-best-hospital">
+                        <div class="the-best-hospitals__two-cirles">
+                            <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2.36844" cy="2.68421" r="2.15789" fill="black" />
+                            </svg>
+                            <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2.36844" cy="2.68421" r="2.15789" fill="black" />
+                            </svg>
+                        </div>
+                        <div class="the-best-hospital__info-about-hosputal">
+                            <div class="info-about-hosputal__logo"></div>
+                            <h2 class="info-about-hospital__h2">Rs. Bertha Medika</h2>
+                            <p class="info-about-hospital__p">Jl. Cisaat, Sukabumi </p>
+                        </div>
+                        <div class="the-best-hospital__short-description-of-hospital">
+                            <div class="short-description-of-hospital__quanity-rooms">
+                                <p class="quanity-rooms__quanity-p">120</p>
+                                <p class="quanity-rooms__p">Rooms</p>
+                            </div>
+                            <div class="short-description-of-hospital__reputation">
+                                <p class="reputation__reputation-p">#2</p>
+                                <p class="reputation__p">Reputation</p>
+                            </div>
+                            <div class="short-description-of-hospital__best-doctor">
+                                <p class="best-doctor__best-doctor-p">33+</p>
+                                <p class="best-doctor__p">Best Doctor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hospital-information__the-best-hospital">
+                        <div class="the-best-hospitals__two-cirles">
+                            <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2.36844" cy="2.68421" r="2.15789" fill="black" />
+                            </svg>
+                            <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2.36844" cy="2.68421" r="2.15789" fill="black" />
+                            </svg>
+                        </div>
+                        <div class="the-best-hospital__info-about-hosputal">
+                            <div class="info-about-hosputal__logo"></div>
+                            <h2 class="info-about-hospital__h2">Rs. Bertha Medika</h2>
+                            <p class="info-about-hospital__p">Jl. Cisaat, Sukabumi </p>
+                        </div>
+                        <div class="the-best-hospital__short-description-of-hospital">
+                            <div class="short-description-of-hospital__quanity-rooms">
+                                <p class="quanity-rooms__quanity-p">120</p>
+                                <p class="quanity-rooms__p">Rooms</p>
+                            </div>
+                            <div class="short-description-of-hospital__reputation">
+                                <p class="reputation__reputation-p">#3</p>
+                                <p class="reputation__p">Reputation</p>
+                            </div>
+                            <div class="short-description-of-hospital__best-doctor">
+                                <p class="best-doctor__best-doctor-p">33+</p>
+                                <p class="best-doctor__p">Best Doctor</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="hospital-information__view-al-scheduled">
+                    <h2 class="view-all-schedulded__h2">Scheduled</h2>
+                    <a href="#" class="view-all-scheduled__link">View all</a>
+                </div>
+                <div class="hospital-information__scheduled-events">
+                    <div class="scheduled-events__all-events">
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Blood donors for humanity
+                            </h2>
+                            <p class="one-event__date-of-event">Sunday 16 May - 2020</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Charity </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Blood donors for humanity
+                            </h2>
+                            <p class="one-event__date-of-event">Sunday 16 May - 2020</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Charity </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Blood donors for humanity
+                            </h2>
+                            <p class="one-event__date-of-event">Sunday 16 May - 2020</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Charity </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Blood donors for humanity
+                            </h2>
+                            <p class="one-event__date-of-event">Sunday 16 May - 2020</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Charity </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Blood donors for humanity
+                            </h2>
+                            <p class="one-event__date-of-event">Sunday 16 May - 2020</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Charity </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Blood donors for humanity
+                            </h2>
+                            <p class="one-event__date-of-event">Sunday 16 May - 2020</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Charity </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Blood donors for humanity
+                            </h2>
+                            <p class="one-event__date-of-event">Sunday 16 May - 2020</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Charity </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Blood donors for humanity
+                            </h2>
+                            <p class="one-event__date-of-event">Sunday 16 May - 2020</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Charity </p>
+                        </div>
+                        <div class="all-events__one-event">
+                            <div class="one-event__three-circles-container">
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+                                <svg width="5" height="5" viewBox="0 0 3 3" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="1.41176" cy="1.41176" r="1.41176" fill="#56549E" />
+                                </svg>
+
+                            </div>
+                            <h2 class="one-event__name-of-event">Medical Checkup</h2>
+                            <p class="one-event__date-of-event">Tuesday, 11 Jan - 2021</p>
+
+                            <!--<p class="one-event__category-of-event_healthy">Healthy </p>-->
+                            <p class="one-event__category-of-event">Healthy </p>
+                        </div>
+                    </div>
+                    <button class="scheduled-evens__button">Check your Schedule</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="libs/slick-slider/slick-1.8.1/slick/slick.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
